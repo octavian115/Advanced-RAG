@@ -78,7 +78,7 @@ class RAGFusion:
         )
 
         # use the llm with structured output to generate sub-queries
-        structured_llm = llm.with_structured_output(SubQuerySchema)
+        structured_llm = llm.with_structured_output(SubQuerySchema) 
 
         # create the chain
         llm_chain = prompt | structured_llm
